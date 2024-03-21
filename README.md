@@ -1,4 +1,4 @@
-## Guidance for Electric Vehicle (EV) Battery Health Prediction on AWS
+## Guidance for Battery Digital Twin on AWS
 
 ### Introduction
 
