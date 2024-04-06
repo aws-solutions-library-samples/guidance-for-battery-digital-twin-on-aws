@@ -33,8 +33,7 @@ Here is the reference architecture for this project:
     ```
 2. Change directory to the pattern directory:
     ```
-    cd guidance-for-battery-digital-twin-on-aws
-    cd source
+    cd guidance-for-battery-digital-twin-on-aws/source
     ```
 4. Configure your AWS CLI to point to the AWS account and region where you want to deploy the solution. You can run the following command to verify which AWS account you are currently logged on:
     ```
@@ -62,7 +61,7 @@ Here is the reference architecture for this project:
 
 The sample code deploys a web application for 2 types of users: Developer and Fleet Operator. Developer has access to all parts of the application, and Fleet Operator can only view the dashboard with battery location and digital twin of batteries after at least one ML pipeline is executed successfully. You can switch profile by clicking the User icon and then the Switch Profile button.
 
-After logging in, Developer can upload battery health datasets as well as processing plugin scripts (scripts to clean up data). We provide a [sample battery dataset](./source/demo/raw_dataset.csv) and [sample processing plugin file](./source/demo/processing_plugin.py) for easy testing. The sample dataset comes from a [research project](https://data.matr.io/1/projects/5c48dd2bc625d700019f3204) conducted by Severson, Attia, Jin, and others, published in the journal Nature Energy in 2019. Their study, titled "Data-driven prediction of battery cycle life before capacity degradation," appeared in Volume 4 of the journal, spanning pages 383 to 391. The research focused on developing a data-driven approach to predict the cycle life of batteries before they experience significant capacity degradation.
+After logging in, Developer can upload battery health datasets as well as processing plugin scripts (scripts to clean up data). We provide sample battery datasets and sample processing plugin file for easy testing which are preloaded when the training pipeline triggers during the deployment. The sample dataset comes from a [research project](https://data.matr.io/1/projects/5c48dd2bc625d700019f3204) conducted by Severson, Attia, Jin, and others, published in the journal Nature Energy in 2019. Their study, titled "Data-driven prediction of battery cycle life before capacity degradation," appeared in Volume 4 of the journal, spanning pages 383 to 391. The research focused on developing a data-driven approach to predict the cycle life of batteries before they experience significant capacity degradation.
 
 ![Upload](assets/upload.png)
 
