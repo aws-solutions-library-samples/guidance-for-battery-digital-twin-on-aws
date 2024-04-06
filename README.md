@@ -29,31 +29,32 @@ Here is the reference architecture for this project:
 
 1. Create a new directory, navigate to that directory in a terminal and clone the GitHub repository:
     ```
-    git clone https://github.com/aws-solutions-library-samples/guidance-for-electric-vehicle-battery-health-prediction-on-aws
+    git clone https://github.com/aws-solutions-library-samples/guidance-for-battery-digital-twin-on-aws
     ```
 2. Change directory to the pattern directory:
     ```
+    cd guidance-for-battery-digital-twin-on-aws
     cd source
     ```
-3. Configure your AWS CLI to point to the AWS account and region where you want to deploy the solution. You can run the following command to verify which AWS account you are currently logged on:
+4. Configure your AWS CLI to point to the AWS account and region where you want to deploy the solution. You can run the following command to verify which AWS account you are currently logged on:
     ```
     aws sts get-caller-identity
     ```
-4. If you are using CDK to deploy to your AWS account for the first time, you will have to bootstrap your account. To do this, run the command:
+5. If you are using CDK to deploy to your AWS account for the first time, you will have to bootstrap your account. To do this, run the command:
     ```
     cdk bootstrap <account-number>/<region>
     ```
-5. To build the entire project, run
+6. To build the entire project, run
     ```
     npm run build
     ```
-6. To deploy the project, run
+7. To deploy the project, run
     ```
     npm run deploy
     ```
-7. We have architected this demo in a way that self-registration is disabled and only administrators can add users to access the web application. Therefore, once the project is deployed, you need to create a Cognito User to access the web application [through the AWS Management console](https://docs.aws.amazon.com/cognito/latest/developerguide/how-to-create-user-accounts.html) or [using AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/admin-create-user.html).
+8. We have architected this demo in a way that self-registration is disabled and only administrators can add users to access the web application. Therefore, once the project is deployed, you need to create a Cognito User to access the web application [through the AWS Management console](https://docs.aws.amazon.com/cognito/latest/developerguide/how-to-create-user-accounts.html) or [using AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/admin-create-user.html).
 
-8. You have finished deployment and setting up! You can find the URL of the web application in CloudFront, or as part of the CDK outputs (value for WebAppCloudFrontDistributionDomainName).
+9. You have finished deployment and setting up! You can find the URL of the web application in CloudFront, or as part of the CDK outputs (value for WebAppCloudFrontDistributionDomainName).
 
 **Note**: Since WAF CloudFront ACL can only be installed in us-east-1, the WAF stack and App stack might be deployed to 2 separate regions, depending on what your default deployment region is.
 
