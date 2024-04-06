@@ -12,6 +12,12 @@ The sample code in this project is based on the [Guidance for Electric Vehicle B
 Here is the reference architecture for this project:
 ![Architecture](assets/architecture.png)
 
+### Cost
+
+You are responsible for the cost of the AWS services used while running this Guidance. As of  , the cost for running this Guidance with the default settings in the Default AWS Region US East-1 (N. Virginia) is approximately $600.0 per month for processing 16k records in timestream.
+
+We recommend creating a Budget through AWS Cost Explorer to help manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this Guidance.
+
 ## Getting Started
 
 ### Requirements
