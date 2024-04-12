@@ -28,7 +28,7 @@ Here is the reference architecture for this project:
 
 ### Cost
 
-You are responsible for the cost of the AWS services used while running this Guidance. The cost for running this Guidance with the default settings in the Default AWS Region US East-1 (N. Virginia) is approximately $165.37 per month for processing 200,000 records/month in the solution.
+You are responsible for the cost of the AWS services used while running this Guidance. The cost for running this Guidance with the default settings in the Default AWS Region US East-1 (N. Virginia) is approximately $181.43 per month for processing 200,000 records/month in the solution.
 
 We recommend creating a Budget through AWS Cost Explorer to help manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this Guidance.
 
