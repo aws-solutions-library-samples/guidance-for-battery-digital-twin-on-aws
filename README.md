@@ -39,7 +39,7 @@ The following table provides a sample cost breakdown for deploying this Guidance
 | AWS service  | Dimensions | Cost [USD] |
 | ----------- | ------------ | ------------ |
 | Amazon Timestream | 200,000 read/write events, 1024 bytes per record, 190GB Magnetic Storage | $ 71.63 |
-| Amazon Fleetwise | 5 vehicle with 4 campaigns | $ 16.15 |
+| AWS IoT Fleetwise | 5 vehicle with 4 campaigns | $ 16.15 |
 | Amazon Forecast |  83244 enteries with biweekly training | $ 48.28 |
 | Amazon Cloudwatch |  5GB of log ingested per month | $ 5.5 |
 | Amazon Glue |  2 ETL python jobs run for 2 minutes per pipeline execution, 15 times per month| $ 8.65 |
