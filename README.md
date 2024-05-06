@@ -46,6 +46,7 @@ The following table provides a sample cost breakdown for deploying this Guidance
 | Amazon S3 | 6 Buckets, 6GB storage, average object size 91.0 KB | $ 1.22 |
 | others | API Gateway, VPC, WAF, GuardDuty, DynamoDB, Cloudtrail, EventBridge  | $ 30.00 |
 
+Note: There might be additional charges due to usage of partner APIs, refer to the 'Obtaining an API Key for Analytics and Fault Detection APIs' for details.
 
 ## Prerequisites
 ### Operating System
