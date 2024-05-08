@@ -28,7 +28,7 @@ Here is the reference architecture for this project:
 
 ### Cost
 
-You are responsible for the cost of the AWS services used while running this Guidance. The cost for running this Guidance with the default settings in the Default AWS Region US East-1 (N. Virginia) is approximately $181.43 per month for processing 200,000 records/month in the solution.
+You are responsible for the cost of the AWS services used while running this Guidance. As of 8th May 2024, the cost for running this Guidance with the default settings in the Default AWS Region US East-1 (N. Virginia) is approximately $859.60 USD per month for processing 86,4000 records/month in the solution.
 
 We recommend creating a Budget through AWS Cost Explorer to help manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this Guidance.
 
@@ -38,13 +38,13 @@ The following table provides a sample cost breakdown for deploying this Guidance
 
 | AWS service  | Dimensions | Cost [USD] |
 | ----------- | ------------ | ------------ |
-| Amazon Timestream | 200,000 read/write events, 1024 bytes per record, 190GB Magnetic Storage | $ 71.63 |
-| AWS IoT FleetWise | 5 vehicle with 4 campaigns | $ 16.15 |
-| Amazon Forecast |  83244 enteries with biweekly training | $ 48.28 |
-| Amazon Cloudwatch |  5GB of log ingested per month | $ 5.5 |
-| AWS Glue |  2 ETL python jobs run for 2 minutes per pipeline execution, 15 times per month| $ 8.65 |
-| Amazon S3 | 6 Buckets, 6GB storage, average object size 91.0 KB | $ 1.22 |
-| others | API Gateway, VPC, WAF, GuardDuty, DynamoDB, Cloudtrail, EventBridge  | $ 30.00 |
+| Amazon Timestream | Number of records (86400000 per month), Memory store retention (7days), Number of queries (1000 per month), Average time range of data queried by queries (1minutes) | $ 529.86 |
+| AWS IoT FleetWise | Number of vehicles (100), Messages per vehicle (864000 per month) | $ 211.00 |
+| Amazon Forecast |   Data imported (7.56 GB per month), Training hours (48 per month), Forecasting frequency (30 per month) | $ 12.19 |
+| Amazon Cloudwatch |  Standard Logs: Data Ingested (5 GB), Logs Delivered to CloudWatch Logs: Data Ingested (5 GB) | $ 5.05 |
+| AWS Glue |   Number of DPUs for Apache Spark job (10), Number of DPUs for Python Shell job (0.0625)| $ 5.90 |
+| Amazon S3 | S3 Standard storage (3752 GB per month) | $ 86.30 |
+| others | API Gateway, VPC, WAF, GuardDuty, DynamoDB, Cloudtrail, EventBridge  | $ 8.30 |
 
 Note: There might be additional charges due to usage of partner APIs, refer to the 'Obtaining an API Key for Analytics and Fault Detection APIs' for details.
 
