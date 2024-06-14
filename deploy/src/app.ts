@@ -46,6 +46,7 @@ const cfWafStack = new CfWafStack(app, stackName + "-waf", {
   env: {
     account: account,
     region: "us-east-1",
+    description : "Guidance for Battery Digital Twin on AWS (SO9471)"
   },
   // stackName: stackName + "-waf",
 });
