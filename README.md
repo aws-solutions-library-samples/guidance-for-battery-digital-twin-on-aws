@@ -1,6 +1,6 @@
+>[!IMPORTANT] 
+>This Guidance requires the use of [Amazon Forecast](https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html), which is no longer available to new customers. Existing customers of Amazon Forecast can continue using and deploying this Guidance as normal.
 # Guidance for Battery Digital Twin on AWS
-
-**Important:** This Guidance requires the use of [Amazon Forecast](https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html), which is no longer available to new customers. Existing customers of Amazon Forecast can continue using and deploying this Guidance as normal.
 
 ## Table of Content
 
