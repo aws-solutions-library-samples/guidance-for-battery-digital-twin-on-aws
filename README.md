@@ -120,7 +120,7 @@ When the ML pipeline finishes (this can take a few hours), both Developer and Fl
 
 ![Map](assets/map.png)
 
-You can click on a vehicle to view battery information. To demonstrate how a digital twin for a battery could look like, we inserted some dummy values for the battery attributes, specifed [here](./source/deploy/assets/).
+You can click on a vehicle to view battery information. To demonstrate how a digital twin for a battery could look like, we inserted some dummy values for the battery attributes, specifed [here](./source/deploy/cdk-assets/).
 
 ![Battery](assets/battery.png)
 
