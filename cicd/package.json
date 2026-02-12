@@ -17,7 +17,7 @@
     "@typescript-eslint/parser": "5.22.0",
     "aws-cdk": "2.22.0",
     "aws-cdk-lib": "2.80.0",
-    "aws-sdk": "^2.1125.0",
+    "aws-sdk": "^2.1646.0",
     "cdk-assets": "2.22.0",
     "constructs": "^10.0.0",
     "eslint": "^8.9.0",
